@@ -1,0 +1,94 @@
+
+.component{
+    display: flex;
+    /* background: goldenrod; */
+    width: 80%;
+    /* height: 100%; */
+    margin: 0 auto;
+}
+
+.item{
+
+    /* background: pink; */
+    width: 8vw;
+    height: 20vh;
+    text-align: center;
+    border: 0.15em white solid;
+    margin:0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.img-content{
+    width: 40vw;
+    /* height: 78vh; */
+    background: purple;
+    border-radius: 2%;
+}
+.title-bloc{
+   
+    /* background-color: blue; */
+    width: 80%;
+    /* height: 24vh; */
+    margin: 0 auto;
+    text-align: justify;
+
+}
+.item article{
+    background: brown;
+    width: 2vw;
+    /* height: 3vh; */
+}
+
+.cart-bloc{
+    /* background: grey; */
+    /* display: flex; */
+    width: -webkit-fill-available;
+}
+
+
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 88%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+h5{
+    margin-bottom: auto;
+    border: 1px white solid;
+    padding: 0.4rem;
+    border-bottom-width: thick;
+    border-radius: 12%;
+    background: gray
+}
+.cart-content{
+    display: flex;
+
+}
+figcaption{
+    z-index: 2;
+    position: absolute;
+    width: 5%;
+    top: 72%;
+    background: gray;
+    border-radius: 12%;
+    padding: 0;
+}
+.empty{
+    z-index: 1;
+    width: 5%;
+    height: 1%;
+    padding: 0.8rem;
+    position: absolute;
+    border-radius: 12%;
+    background: white;
+    bottom: 23%;
+}
+
+img figure{
+    position: relative;
+}

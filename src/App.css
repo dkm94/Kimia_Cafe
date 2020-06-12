@@ -1,0 +1,1527 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+  /* ******************* Hover Link *************** */
+  
+  .col-text-onglet-10,.col-text-onglet-5, .col-text-onglet a{
+    padding: 0.9rem;
+    -webkit-transition: all 0.15s ease; -moz-transition: all 0.15s ease; 
+    transition: all 0.15s ease;
+      background-size: 100% 200%; 
+      background-position: 0 -100%;
+      background-image: linear-gradient(to top, transparent 50%, #2f2f2f 50%); 
+  }
+   .col-text-onglet-10 a:hover, 
+.col-text-onglet-5 a:hover, .col-text-onglet a:hover{
+  color: white;
+  background-position: 0 0;
+}
+
+  /* *******************CSS COMMUN***************** */
+
+/* dimensions du component */
+.component {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* background-color: red; */
+}
+
+/* dimensions du component en full height 100vh */
+ .component-full-height {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* background-color: red; */
+}
+
+/* dimensions du conteneur dans le component */
+.component-conteneur {
+  display: flex;
+  height: 90%;
+  width: 80%;
+}
+
+/* centrer une box dans une autre  */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* conteneur de colonnes */
+.cols {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* créér un espace entre les box/colonnes */
+.cols-space {
+  /* justify-content: space-between; */
+  justify-content: space-around;
+}
+
+/* dimensions de 2 box/colonnes séparées par un espace */
+.deux-cols-space {
+  height: 100%;
+  width: 47%;
+}
+
+/* dimensions de 3 box/colonnes séparées par un espace */
+.trois-cols-space {
+  height: 100%;
+  width: 30%;
+}
+
+/* dimensions de 2 box/colonnes non séparées par un espace */
+.deux-cols {
+  height: 100%;
+  width: 50%;
+}
+
+/* dimensions de 3 box/colonnes non séparées par un espace */
+.trois-cols {
+  height: 100%;
+  width: 33%;
+  margin: 0;
+}
+
+/* adapter la taille d'une image à son conteneur */
+.deux-cols-space-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* aligner en colonne */
+.col-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* dimensions titre */
+.col-text-section {
+  height: 10%;
+  width: 100%;
+}
+
+/* dimensions sous-titre + pavé texte */
+.col-text-pavtext{
+  height: fit-content;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: justify;
+}
+
+/* dimensions des petites colonnes dans les components */
+.col-text-tableau {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* dimensions de l'onglet "découvrir l'équipe" */
+.col-text-onglet {
+  height: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: 'Old standart TT' serif;
+  font-size: .9em;
+}
+
+/* gérer un contenu image et texte  */
+.col-text-content {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  justify-content: space-between;
+}
+
+/* gérer image + titre + texte, dans le cas EQUIPE et ACTUALITE  */
+.col-text-itt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* dimensions de l'image dans .col-text-itt */
+.col-text-itt img{
+  height: 34vh;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+/* gérer le titre sous l'image  */
+.col-text-itt h2 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 0.95em;
+}
+
+/* gérer le paragraphe sous le titre  */
+.col-text-itt p {
+  color: black;
+  font-family: 'EB Garamond', serif;
+  text-align: justify;
+  margin-top: 0;
+  font-size: 1.05em;
+}
+
+/* ajouter une border sur le côté droit, dans le cas de 2 box/colonnes */
+.add-border-right {
+  border-right: 1px solid;
+  }
+
+/* ajouter une border côté droit et gache, dans le cas de 3 box/colonnes */
+.add-border-lr {
+  border-right: 1px solid;
+  border-left: 1px solid;
+  }
+
+.quote {
+  height: 30%;
+  width: 100%;
+}
+
+.quote h1 {
+  color: black;
+  font-family: 'Old standart TT' serif;
+  font-weight: 400;
+  font-size: 2em;
+
+}
+
+.instagram {
+  height: 30%;
+  width: 100%;
+}
+
+.width80 {
+  width: 80%;
+}
+
+.height90 {
+  height: 95%;
+}
+
+.padding {
+  padding: 7px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/*--------------- header ----------------*/
+
+  .header {
+      display: flex;
+      position: relative;
+      /* align-items: center; */
+      height: 100vh;
+      width: 100%;
+  }
+
+  .headertrois {
+      display: inline-flex;
+  }
+
+  .titre {
+      text-align: center;
+  }
+
+  .taillelogo {
+      z-index: 2;
+      width: 18%;
+      height: 21%;
+      position: absolute;
+      right: 21%;
+      bottom: 47%;
+  }
+
+  .logo img {
+      height: 100%;
+      width: 100%;
+  }
+
+  .blocun {
+      z-index: 2;
+      height: 100%;
+      width: 70%;
+  }
+
+  .blocun img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .blocdeux {
+      /* position: relative; */
+      height: 100%;
+      width: 30%;
+      /* background-color: red; */
+  }
+
+  .blocdeux p {
+      height: 100%;
+      bottom: -60%;
+      z-index: 1;
+      position: absolute;
+      text-align: center;
+      right: 0%;
+      left: 72%;
+      color: black;
+      font-family: 'Bree Serif', serif;
+      font-weight: 400;
+      font-display: swap;
+      font-size: 1.563em;
+  }
+
+  .blocdeux img {
+      width: 15%;
+      height: 15%;
+  }
+
+  .slide-down {
+    width:100%;
+    overflow:hidden;
+  }
+
+  .slide-down p {
+    animation: 5s slide-down;
+    margin-top:0%;
+  }
+
+  @keyframes slide-down {
+    from {
+      margin-top: -100%;
+      height: 157%;
+    }
+
+    to {
+      margin-top: 30%;
+      height: 100%;
+    }
+  }
+
+
+/*--------------- actualité----------------*/
+  .cols-article h2 {
+    font-size: 0.8em;
+  }
+
+  .cols-article h2 {
+    color: black;
+    font-size: 1em;
+    font-family: 'Old standart TT' serif;
+
+  }
+
+  .article-content {
+      width: 90%;
+  }
+
+/*--------------- instagram ----------------*/
+
+.instagramContainer {
+  width: 100%;
+}
+
+.instagramFeed {
+  height: 100%;
+  width: 100%;
+}
+
+.lightwidget-widget {
+  width:100%;
+  border:0;
+  overflow:hidden;
+  display: flex;
+}
+
+.lightwidget--image-format-square .lightwidget__image {
+
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.lightwidget--image-format-square .lightwidget__image-wrapper {
+  height: 89vh;
+  /* position: relative; */
+  width: 100%;
+}
+
+/*--------------- pied de page ----------------*/
+
+.pdp {
+  height: 60vh;
+}
+
+.component-pdp {
+  display: flex;
+  justify-content: center;
+  height: 15%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.component-pdp p {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  color: black;
+  font-size: 1.05em;
+}
+
+.divpdp {
+  display: flex;
+  height: 50%;
+  width: 80%;
+}
+
+.divinput {
+  display: flex;
+  justify-content: center;
+}
+
+.divinput button {
+  border: none;
+  height: 86%;
+  padding: 3px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+
+/*--------------- Footer ----------------*/
+
+#dims-footer {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.footer-kimia {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 10%;
+  margin: 0 auto;
+  /* background: goldenrod; */
+  border-top: 1px solid #696969;
+}
+
+/*-------------- Cantine ----------------*/
+.col-text-pavtext-cantine {
+  height: fit-content;
+}
+
+#col-text-tableau {
+  height: fit-content;
+}
+
+.col-text-onglet-10 {
+  height: 10%;
+}
+
+.col-text-onglet-10 a:hover{
+  background: #2f2f31;
+  color:white;
+}
+ .col-text-onglet-5 a:hover{
+  background:#2f2f31;
+  color:white;
+}
+
+
+
+/* font component cantine */
+h1 {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  color: black;
+  text-align: center;
+  
+
+}
+
+p {
+
+  color: black;
+  font-family: 'EB Garamond', serif;;
+  font-size: 1.05em;
+
+}
+
+
+
+/* navbar */
+
+/* .Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+} */
+
+.Navbar {
+  background-color: white;
+  z-index: 3;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: -72px;
+  transition: top 0.6s
+}
+
+.Navbar--hidden{
+  top: 0px;
+  /******nav mobile*****/
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.logomobile {
+  display: none;
+}
+  
+.main-header {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+  .header-nav {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    }
+
+
+  .navbar-brand{
+    z-index: 3;
+  width: 10%;
+  margin-top: 0.1rem;
+  }
+
+  .navbar-brand h3{ 
+    margin: 0;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.20em;
+    color: black;
+  }
+
+  ul{
+    z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 90%;
+  }
+
+  li{
+    z-index: 3;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.10em;
+  padding: 0.5rem;
+  }
+
+  a{
+  text-decoration: none;
+  color: black;
+  }
+
+
+/*-------------- Equipe ----------------*/
+
+/* font component equipe */
+.component-equipe h1 {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  color: black;
+  text-align: center;
+
+}
+
+.component-equipe p {
+  color: black;
+  font-family: 'EB Garamond', serif;;
+  font-size: 1.05em;
+}
+
+
+#col-team-kimia {
+height: 100%;
+width: 35%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: justify;
+
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+
+}
+
+#col-team-kimia img {
+  height: 38vh;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#col-team-kimia-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+#col-team-kimia-2 img {
+  height: 38vh;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#col-team-kimia-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+#col-team-kimia-3 img {
+  height: 38vh;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.margin-top {
+  margin-top: 0;
+}
+
+
+/*-------------- Contact ----------------*/
+
+.component-contact h2 {
+   color: black;
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  text-align: center;
+  
+
+}
+
+.cols-kimia-contact {
+  height: 85%;
+}
+
+.contact-form-kimia {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.05em;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-form-kimia form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 80%;
+}
+
+.submit-contact {
+
+  height: 28%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.submit-border {
+  border: 1px solid #C4C4C4;
+  height: 30%;
+  width: 35%;
+
+}
+.submit-button {
+  background-color: white;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+
+.contact-adresse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-adresse p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.05em;
+  text-align: center;
+  margin: 0;
+  width: 80%;
+
+}
+
+.adresse-2 {
+  margin-bottom: 5%;
+}
+
+.adresse-map{
+  height: 60%;
+  width: 80%;
+}
+
+.adresse-map img {
+  width: 100%;
+  height: 100%;
+}
+.contact-horaire{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-horaire p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.05em;
+  margin: 0;
+}
+
+.horaire-content-1 , .horaire-content-2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  font-size: 1.05em;
+  margin: 5px;
+}
+
+
+.contact-recrutement{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recrutement-content {
+  margin: 0;
+  text-align: center;
+  width: 55%;
+}
+
+
+
+
+
+/******************** Epicerie ***************************/
+
+.componenent-epicerie {
+  height: fit-content;
+}
+
+/* font component epicerie */
+.component-epicerie h1 {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  color: black;
+  text-align: center;
+  
+
+}
+
+.component-epicerie h2 {
+  color: black;
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  text-align: center;
+  
+
+}
+
+.component-epicerie p {
+  color: black;
+  font-family: 'EB Garamond', serif;;
+  font-size: 1.05em;
+}
+
+.item{
+/* background: pink; */
+    /* background: pink; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 74px;
+height: 100%;
+text-align: center;
+margin: 0.1rem;
+}
+
+.item img {
+  display: flex;
+  height: 80%;
+  object-fit: inherit;
+}
+
+.glocery {
+  background: beige;
+  height: 36%;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  font-size: 0.9em;
+  color: black;
+}
+
+#dims-bloc-titre {
+  height: 5%;
+}
+
+#dims-bloc-titre h1 {
+  margin-bottom: 0;
+}
+
+
+#dims-bloc-texte {
+  height: 25%;
+}
+
+#dims-bloc-texte h2 p {
+  margin: 0;
+}
+
+.margin-null {
+  margin: 0;
+}
+
+#dims-wrapper {
+  height: 60%;
+}
+
+.wrapper{
+display: flex;
+justify-content: space-between;
+height: fit-content;
+width: 100%;
+margin: 0;
+}
+
+h5{
+margin-bottom: auto;
+border: 1px white solid;
+padding: 0.4rem;
+border-bottom-width: thick;
+border-radius: 12%;
+background: gray
+}
+
+.cart-content{
+display: flex;
+flex-wrap: wrap;
+height: 50%;
+width: 100%;
+justify-content: space-between;
+margin-bottom: 10px;
+
+}
+
+figcaption {
+height: 23px;
+display: flex;
+align-items: center;
+color: white;
+position: absolute;
+/* font-size: 0.9em; */
+background: gray;
+border-radius: 12%;
+padding: 0;
+}
+
+.col-img-ep {
+  height: 100%;
+  width: 40%;
+}
+
+.col-text-ep {
+  height: 80%;
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+#dims-col-ep {
+  height: 100%;
+}
+
+
+
+/* ********************************* Enfant ******************************************/
+
+/* font component enfants */
+.component-enfants h1 {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  color: black;
+  text-align: center;
+  
+
+}
+
+.component-enfants h2 {
+  color: black;
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  text-align: center;
+  
+
+}
+
+.component-enfants p {
+  color: black;
+  font-family: 'EB Garamond', serif;;
+  font-size: 1.05em;
+}
+
+.pic-img-dims{
+
+    /* min-inline-size: -webkit-fill-available; */
+    width: 100%;
+    height: 90%;
+}
+
+
+/*-------------- Associations ----------------*/
+
+/* font component associations */
+
+.component-associations h1 {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  color: black;
+  text-align: center;
+}
+
+.component-associations h2 {
+  color: black;
+  font-family: 'Old Standard TT', serif;
+  font-weight: 500;
+  font-size: 1.30em;
+  text-align: center;
+}
+
+.component-associations p {
+  color: black;
+  font-family: 'EB Garamond', serif;;
+  font-size: 1.05em;
+}
+#margin-h2 {
+  margin-bottom: 0;
+}
+
+#no-mg-top {
+  margin-top: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1.7em;
+  }
+  
+  .component-conteneur {
+    height: fit-content;  
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .component {
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+
+  /************NAVBAR***********/
+
+   .Navbar {
+    background-color: white;
+    z-index: 1;
+    height: 10vh;
+    width: 100%;
+    position: static;
+  }
+
+  .burgerMenu {
+    height: 89px;
+    display: inline-block;
+    position: fixed;
+    z-index: 4;
+    width: 20%;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .barMenu{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    margin-left: 18px;
+  }
+
+  .burgerMenu ul {
+    z-index: 1;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .header-nav{
+    display: none;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 88px;
+    height: 9px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  } */
+
+
+  .logomobile {
+    z-index: 3; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    background: white;
+  }
+
+  .logoimg {
+    width: 50%;
+  }
+
+
+  
+  /********HEADER*********/
+
+  .header {
+    height: fit-content;
+  }
+
+  .headertrois {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 20px;
+  }
+
+  .blocun {
+    width: 100%;
+}
+
+  .blocun img {
+    width: inherit;
+    border: 0;
+}
+
+  .blocdeux {
+    display: none;
+  }
+
+  .slide-down p {
+    animation: fadein 5s;
+  }
+
+  .taillelogo {
+    width: 23%;
+    height: 22%;
+    right: 75%;
+    bottom: 75%;
+}
+
+/******ACTUALITE*********/
+
+.colonnes-actu {
+  flex-direction: column;
+}
+
+.new-actu {
+  height: fit-content;
+  margin-bottom: 60px;
+  margin-top: 5px;
+}
+
+.section-actu {
+  height: fit-content;
+}
+
+.col-text-itt img {
+  height: fit-content;
+}
+
+
+
+/*******CANTINE********/
+  .cols {
+    flex-direction: column;
+  }
+
+  .cols article {
+    width: 100%;
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .col-2 {
+    height: 80%;
+  }
+
+  #col-text-tableau {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /***********EPICERIE*********/
+
+  .col-img-ep {
+    display: none;
+  }
+
+  .col-text-ep {
+    width: 100%;
+  }
+
+  .cart-content {
+    justify-content: center;
+  }
+
+  .item {
+    width: 234px;
+  }
+
+  /***********PDP**********/
+
+  .footer {
+    height: fit-content;
+  }
+
+  .devise {
+    display: none;
+  }
+  
+  .component-pdp {
+    height: fit-content;
+    flex-direction: column;
+  }
+  
+  .newsletter {
+    height: fit-content;
+    width: 100%;
+  }
+  
+  .div-icons {
+    height: 50px;
+    width: 100%;
+  }
+  
+  .div-icons p {
+    display: none;
+  }
+  
+  .quote {
+    display: none;
+  }
+
+  .divinputun {
+    width: 90%;
+    height: 98%;
+    padding: 0;
+  }
+
+  .divinputdeux {
+    width: 10%;
+    margin: 0;
+    height: 39px;
+  }
+
+  .divinputdeux button {
+    width: 100%;
+    border: none;
+    height: 101%;
+    padding: 0;
+  }
+
+  .inputmail {
+    height: 33px;
+    width: 100%;
+  }
+
+  /*******ASSO*****/
+
+  .col-asso {
+    width: 100%;
+  }
+
+  .component-associations {
+    flex-direction: column-reverse;
+  }
+
+  /*********EQUIPE*********/
+
+#col-team-kimia, #col-team-kimia-2, #col-team-kimia-3 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+
+.col-equipe img {
+  object-fit: contain;
+}
+
+#col-team-kimia, #col-team-kimia-2, #col-team-kimia-3 img {
+  object-fit: contain;
+  /* margin-bottom: 50px; */
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 1.2em;
+  }
+
+  /**********NAV********/
+  .burgerMenu {
+    height: 68px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 70px;
+  height: 8px;
+}
+
+   /*********EPICERIE**********/
+  
+  .item {
+    width: 175px;
+  }
+
+/*****EQUIPE********/
+
+.col-equipe p {
+  margin-top: 0;
+}
+
+#col-team-kimia, #col-team-kimia-2, #col-team-kimia-3 {
+  margin-bottom: 30px;
+}
+  
+   /*********Enfants*******/
+
+  .component-enfants {
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+  .col-text-tableau {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-text-tableau p {
+    text-align: justify;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .trois-cols {
+    width: 100%;
+  }
+
+  .add-border-lr {
+    border-right: none;
+    border-left: none;
+  }
+
+  #margin-h2 {
+    margin-bottom: 10px;
+  }
+
+  #no-mg-top {
+    margin-top: 15px;
+  }
+
+
+
+  /*********Contact*******/
+
+  .section-contact{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .contact-form-kimia {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .title-contact-kimia {
+    margin-bottom: 9px;
+  }
+
+  .component-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cols-kimia-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .submit-border{
+    height: 41%;
+  }
+
+  .contact-recrutement {
+    margin-top: 20px
+  }
+
+}
+
+
+@media screen and (max-width: 414px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .component {
+    height: fit-content;
+  }
+
+  h1 {
+    font-size: 1.50em;
+  }
+
+  /*************NAVBAR************/
+
+  .burgerMenu {
+    height: 45px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 46px;
+  height: 5px;
+  margin: 0;
+}
+
+  
+  /*********HEADER********/
+
+  .headertrois {
+    margin: 10px;
+  }
+
+  /*******ACTUALITE********/
+
+  .new-actu {
+    margin-bottom: 40px;
+}
+
+.new-actu img {
+  margin-bottom: 0px;
+}
+
+
+/********CANTINE*******/
+
+  .col-1, .col-2{
+    width: 90%;
+}
+
+
+
+/*********Enfants*******/
+
+.component {
+  height: fit-content;
+}
+
+.component-enfants {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .component-enfants h2, h1 {
+  font-size: 1.2em;
+} */
+
+.deux-cols-space {
+  height: fit-content;
+  width: 100%;
+}
+
+.col-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.col-text-pavt-text {
+  padding-top: 22px;
+}
+
+.deux-cols-space-img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+  #margin-h2 {
+    margin-bottom: 2px;
+  }
+
+  #no-mg-top {
+    margin-top: 8px;
+  }
+
+  /*********Contact*******/
+
+  .section-contact{
+    font-size: 0.9em;
+    line-height: 1.5em;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .title-contact-kimia {
+    margin-bottom: 9px;
+  }
+
+  .component-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cols-kimia-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-form-kimia {
+    width: 100%;
+  }
+
+  .contact-form-kimia form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 93%;
+  }
+
+
+  .submit-contact {
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+  }
+
+  .component-contact h2 {
+    font-size: 0.9em;
+  }
+
+
+} 
+

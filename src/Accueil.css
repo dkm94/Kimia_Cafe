@@ -1,0 +1,214 @@
+/*--------------- Navbar ----------------*/
+
+    .Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    }
+    
+    .main-header {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    }
+    
+    .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    }
+    
+    
+    .navbar-brand{
+    width: 10%;
+    margin-top: 0.1rem;
+    }
+
+    .navbar-brand h3{ 
+        font-family: 'Old Standard TT', serif;
+        font-size: 1.20em;
+        color: black;
+    }
+    
+    ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 90%;
+    }
+    
+    li{
+    
+    font-family: 'EB Garamond', serif;
+    font-size: 1.10em;
+    padding: 0.5rem;
+    }
+    
+    a{
+    text-decoration: none;
+    color: black;
+    }
+    
+  /*--------------- header ----------------*/
+  
+    .header {
+        display: flex;
+        position: relative;
+        /* align-items: center; */
+        height: 100vh;
+        width: 100%;
+    }
+  
+    .headertrois {
+        display: inline-flex;
+    }
+  
+    .titre {
+        text-align: center;
+    }
+  
+    .taillelogo {
+        width: 18%;
+        height: 21%;
+        position: absolute;
+        right: 21%;
+        bottom: 47%;
+    }
+  
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+  
+    .blocun {
+        height: 100%;
+        width: 70%;
+    }
+  
+    .blocun img {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .blocdeux {
+        /* position: relative; */
+        height: 100%;
+        width: 30%;
+        /* background-color: red; */
+    }
+  
+    .blocdeux p {
+        bottom: 30%;
+        position: absolute;
+        right: 0%;
+        left: 78%;
+        color: black;
+        font-family: 'Bree Serif', serif;
+        font-weight: 400;
+        font-display: swap;
+        font-size: 1.563em;
+    }
+  
+    .blocdeux img {
+        width: 15%;
+        height: 15%;
+    }
+  
+  /*--------------- actualité----------------*/
+    .article-content {
+        width: 90%;
+    }
+  
+  /*--------------- instagram ----------------*/
+  
+  .instagramContainer {
+    width: 100%;
+  }
+  
+  .instagramFeed {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .lightwidget-widget {
+    width:100%;
+    border:0;
+    overflow:hidden;
+    display: flex;
+  }
+  
+  .lightwidget--image-format-square .lightwidget__image {
+  
+    -o-object-fit: cover;
+    object-fit: cover;
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .lightwidget--image-format-square .lightwidget__image-wrapper {
+    height: 89vh;
+    /* position: relative; */
+    width: 100%;
+  }
+  
+  /*--------------- pied de page ----------------*/
+  
+  .pdp {
+    height: 60vh;
+  }
+  
+  .component-pdp {
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+    /* background-color: red; */
+  }
+  
+  .divpdp {
+    display: flex;  
+    height: 50%;
+    width: 80%;
+  }
+  
+  .divinput {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .divinput button {
+    border: none;
+    height: 86%;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  
+  
+  /*--------------- Footer ----------------*/
+  
+  #dims-footer {
+    height: 100%;
+    justify-content: space-between;
+  }
+  
+  .footer-kimia {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    /* background: goldenrod; */
+    border-top: 1px solid #696969;
+  }
